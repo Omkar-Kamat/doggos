@@ -62,7 +62,7 @@ Doggos addresses this by:
 The project is deployed using GitHub Pages.
 
 **Live Link:**  
-https://username.github.io/doggos/
+[https://omkar-kamat.github.io/doggos/](https://omkar-kamat.github.io/doggos/)
 
 ---
 
