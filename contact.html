@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doggos | Contact</title>
+    <title>Doggos | Contact Us</title>
 
     <link rel="stylesheet" href="./style.css" />
 
@@ -16,51 +16,160 @@
     />
 </head>
 
-<body>
-    <!-- NAVBAR -->
-    <nav id="navbar">
-        <div class="nav-left">
-            <div id="nav-logo" class="dynapuff-font" onclick="link('index')">
-                Doggos
-            </div>
+<body class="sn-pro-font">
 
-            <button class="menu" onclick="menu()" aria-label="Toggle menu">
-                <img src="./assets/icons/menu.svg" alt="Menu" />
-            </button>
+<!-- ================= NAVBAR ================= -->
+<nav id="navbar">
+    <div class="nav-left">
+        <div id="nav-logo" class="dynapuff-font" onclick="link('index')">
+            Doggos
         </div>
 
-        <div class="nav-right sn-pro-font" id="menu">
-            <div class="tab" onclick="link('services')">Services</div>
-            <div class="tab" onclick="link('contact')">Contact</div>
-            <div class="tab" onclick="link('about')">About</div>
+        <button class="menu" onclick="menu()" aria-label="Toggle menu">
+            <img src="./assets/icons/menu.svg" alt="Menu" />
+        </button>
+    </div>
+
+    <div class="nav-right" id="menu">
+        <div class="tab" onclick="link('services')">Services</div>
+        <div class="tab" onclick="link('contact')">Contact</div>
+        <div class="tab" onclick="link('about')">About</div>
+    </div>
+</nav>
+
+<!-- ================= INTRO ================= -->
+<section class="section card">
+    <h1>Contact Us</h1>
+    <p><strong>Let’s Talk—With Purpose.</strong></p>
+
+    <p>
+        Whether you’re looking to adopt, foster, partner, or need support,
+        you’re in the right place. We respond fast, clearly, and honestly.
+    </p>
+
+    <p><strong>If it involves a dog, it matters.</strong></p>
+</section>
+
+<!-- ================= CONTACT OPTIONS ================= -->
+<section class="section card">
+    <h2>Get in Touch</h2>
+
+    <h3>General Enquiries</h3>
+    <p>Questions about adoption, fostering, services, or our process.</p>
+    <p><strong>support@yourdomain.com</strong></p>
+    <p>Response time: within 24 hours</p>
+
+    <hr />
+
+    <h3>Adoption & Foster Support</h3>
+    <p>
+        Already applied? Need help choosing the right dog?
+        Unsure if adoption is the right call?
+    </p>
+    <p><strong>adoption@yourdomain.com</strong></p>
+    <p>We’ll guide you—without pressure.</p>
+
+    <hr />
+
+    <h3>Veterinary, Grooming & Services</h3>
+    <p>Appointments, availability, or service-related queries.</p>
+    <p><strong>services@yourdomain.com</strong></p>
+
+    <hr />
+
+    <h3>Partnerships & Collaborations</h3>
+    <p>
+        Shelters, veterinarians, NGOs, brands, or corporate CSR teams.
+    </p>
+    <p><strong>partnerships@yourdomain.com</strong></p>
+    <p>We collaborate selectively and seriously.</p>
+
+    <hr />
+
+    <h3>Report a Dog in Need</h3>
+    <p>Injured, abandoned, or at-risk dog in your area.</p>
+    <p><strong>rescue@yourdomain.com</strong></p>
+    <p>
+        Include location, photos (if safe), and urgency level.
+    </p>
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+<section class="section card">
+    <h2>Send Us a Message</h2>
+
+    <p>
+        Fill this out and we’ll route it to the right team.
+    </p>
+
+    <form>
+        <div style="margin-bottom: 1rem;">
+            <label for="email"><strong>Email Address</strong></label><br />
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+                style="width:100%; padding:0.75rem; margin-top:0.5rem;"
+            />
         </div>
-    </nav>
 
-    <!-- CONTACT HERO -->
-    <section class="page-hero sn-pro-font">
-
-        <div class="page-hero-content">
-            <h1>Get in Touch</h1>
-            <p>
-                Questions, partnerships, or adoption support.
-                Humans respond here.
-            </p>
+        <div style="margin-bottom: 1.5rem;">
+            <label for="message"><strong>Your Enquiry</strong></label><br />
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                placeholder="Tell us how we can help…"
+                style="width:100%; padding:0.75rem; margin-top:0.5rem;"
+            ></textarea>
         </div>
-    </section>
 
-    <!-- CONTACT CONTENT -->
-    <main class="page-content sn-pro-font">
-        <p>
-            Email us at <strong>hello@doggos.org</strong><br />
-            Or reach out on social—real replies, no bots.
+        <button type="submit" class="btn">Send Message</button>
+
+        <p style="margin-top:1rem; font-size:0.9rem;">
+            We respect your privacy. No spam. Ever.
         </p>
-    </main>
+    </form>
+</section>
 
-    <!-- THEME TOGGLE -->
-    <button id="theme-change" onclick="themeChange()" aria-label="Change theme">
-        <img src="./assets/icons/edit-contrast.svg" alt="Theme toggle" />
-    </button>
+<!-- ================= SOCIAL ================= -->
+<section class="section card">
+    <h2>Social Presence</h2>
+    <p>Follow real stories, real dogs, real impact:</p>
+    <p><strong>Instagram | LinkedIn | Twitter</strong></p>
+    <p>This is where the community lives.</p>
+</section>
 
-    <script src="./script.js"></script>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-grid">
+
+        <div class="footer-card card">
+            <h4>Quick Links</h4>
+            <p onclick="link('index')" style="cursor:pointer;">Home</p>
+            <p onclick="link('about')" style="cursor:pointer;">About Us</p>
+            <p onclick="link('services')" style="cursor:pointer;">Services</p>
+            <p onclick="link('contact')" style="cursor:pointer;">Contact</p>
+        </div>
+
+        <div class="footer-card card">
+            <h4>Support & Legal</h4>
+            <p>FAQs</p>
+            <p>Adoption Process</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+        </div>
+
+    </div>
+
+    <p style="text-align:center; margin-top:2rem;">
+        Building better systems for dogs—one responsible decision at a time.
+    </p>
+</footer>
+
+<script src="./script.js"></script>
 </body>
 </html>
