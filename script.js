@@ -3,9 +3,25 @@ let link = (page)=>{
     document.getElementById("menu").style.display = "none";
 }
 
-let themeChange = () =>{
-    console.log("change theme")
-}
+let themeChange = () => {
+    const body = document.body;
+    body.classList.toggle("dark");
+
+
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+};
+
+window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark");
+    }
+});
+
 
 let menu = () =>{
     const menuDisplay = document.getElementById("menu").style.display
