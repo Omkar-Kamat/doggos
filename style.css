@@ -21,6 +21,66 @@ body {
 }
 
 /* =========================
+   DARK THEME 
+   ========================= */
+
+body.dark {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+
+body.dark #navbar {
+    background: #1c1c1c;
+    box-shadow: none;
+}
+
+
+body.dark .nav-right {
+    background: #1c1c1c;
+}
+
+
+body.dark .card:not(.has-bg):not(.service-card) {
+    background-color: #1e1e1e;
+    box-shadow: none;
+}
+
+
+body.dark .footer {
+    background: #1a1a1a;
+}
+
+
+body.dark .btn {
+    background: #eaeaea;
+    color: #000;
+}
+
+
+body.dark .pricing-table thead {
+    background: #222;
+}
+
+body.dark .pricing-table th,
+body.dark .pricing-table td {
+    border-bottom: 1px solid #333;
+}
+
+
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+    background: #1e1e1e;
+    color: #eaeaea;
+}
+
+
+body.dark #theme-change {
+    background: #1c1c1c;
+}
+
+
+/* =========================
    FONTS
    ========================= */
 .dynapuff-font {
