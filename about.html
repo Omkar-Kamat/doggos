@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+        <link href="./style.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="nav-logo" onclick="link('index')" class="dynapuff-font ">
+            Rythm
+        </div>
+        <div class="tabs sn-pro-font" onclick="link('services')">
+            Services
+        </div>
+        <div class="tabs sn-pro-font" onclick="link('contact')">
+            Contact
+        </div>
+        <div class="tabs sn-pro-font" onclick="link('about')">
+            About
+        </div>
+    </nav>
+    <section>
+        <img src="./assets/images/home-mobile.jpg" id="bg-image">
+        <div class="homepage">
+            hello
+        </div>
+    </section>
+
+    <div id="theme-change" onclick="themeChange()">
+        <img src="./assets/icons/edit-contrast.svg" alt="Theme">
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
