@@ -284,6 +284,42 @@ body {
 .bg-shop {
     background-image: url("./assets/images/service-shop.jpg");
 }
+/* =========================
+   IMAGE-BACKED CARDS (OPT-IN ONLY)
+   ========================= */
+.has-bg {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.has-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--overlay-dark);
+    z-index: 0;
+}
+
+.has-bg > * {
+    position: relative;
+    z-index: 1;
+}
+
+.has-bg p,
+.has-bg li {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-about-hero     { background: url("./assets/images/about-hero.jpg") center / cover; }
+.bg-about-why      { background: url("./assets/images/about-why.jpg") center / cover; }
+.bg-about-beliefs  { background: url("./assets/images/about-beliefs.jpg") center / cover; }
+.bg-about-process  { background: url("./assets/images/about-process.jpg") center / cover; }
+.bg-about-adoption { background: url("./assets/images/about-adoption.jpg") center / cover; }
+.bg-about-identity { background: url("./assets/images/about-identity.jpg") center / cover; }
+.bg-about-promise  { background: url("./assets/images/about-promise.jpg") center / cover; }
+.bg-about-mission  { background: url("./assets/images/about-mission.jpg") center / cover; }
 
 /* =========================
    THEME TOGGLE

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doggos | About</title>
+    <title>Doggos | About Us</title>
 
     <link rel="stylesheet" href="./style.css" />
 
@@ -16,56 +16,205 @@
     />
 </head>
 
-<body>
-    <!-- NAVBAR -->
-    <nav id="navbar">
-        <div class="nav-left">
-            <div id="nav-logo" class="dynapuff-font" onclick="link('index')">
-                Doggos
-            </div>
+<body class="sn-pro-font">
 
-            <button class="menu" onclick="menu()" aria-label="Toggle menu">
-                <img src="./assets/icons/menu.svg" alt="Menu" />
-            </button>
+<!-- ================= NAVBAR ================= -->
+<nav id="navbar">
+    <div class="nav-left">
+        <div id="nav-logo" class="dynapuff-font" onclick="link('index')">
+            Doggos
         </div>
 
-        <div class="nav-right sn-pro-font" id="menu">
-            <div class="tab" onclick="link('services')">Services</div>
-            <div class="tab" onclick="link('contact')">Contact</div>
-            <div class="tab" onclick="link('about')">About</div>
+        <button class="menu" onclick="menu()" aria-label="Toggle menu">
+            <img src="./assets/icons/menu.svg" alt="Menu" />
+        </button>
+    </div>
+
+    <div class="nav-right" id="menu">
+        <div class="tab" onclick="link('services')">Services</div>
+        <div class="tab" onclick="link('contact')">Contact</div>
+        <div class="tab" onclick="link('about')">About</div>
+    </div>
+</nav>
+
+<!-- ================= HERO / INTRO ================= -->
+<section class="section card has-bg bg-about-hero">
+    <h1>About Us</h1>
+
+    <p><strong>We’re Here to Fix What’s Broken.</strong></p>
+
+    <p>
+        Dog adoption shouldn’t feel chaotic, emotional, or opaque. Yet too often it is.
+    </p>
+
+    <p>
+        We built this platform to bring structure, accountability, and care into dog adoption
+        without losing the heart.
+    </p>
+
+    <p>
+        No backyard breeders. No shortcuts. No performative compassion.
+    </p>
+
+    <p><strong>Just responsible rescue, done right.</strong></p>
+</section>
+
+<!-- ================= WHY WE EXIST ================= -->
+<section class="section card has-bg bg-about-why">
+    <h2>Why We Exist</h2>
+
+    <p>
+        Every year, countless dogs are abandoned, neglected, or forgotten—not because people
+        are cruel, but because systems fail.
+    </p>
+
+    <p>
+        Shelters are overloaded. Good adopters don’t know where to start.
+        Dogs fall through the cracks.
+    </p>
+
+    <p>
+        We exist to close that gap.
+    </p>
+
+    <p>
+        Our work sits at the intersection of empathy and execution—connecting dogs who need
+        homes with people who are ready to commit.
+    </p>
+</section>
+
+<!-- ================= WHAT WE BELIEVE ================= -->
+<section class="section card has-bg bg-about-beliefs">
+    <h2>What We Believe</h2>
+
+    <p>We operate on a few non-negotiables:</p>
+
+    <ul class="checklist">
+        <li>Adoption is a lifelong responsibility, not a transaction</li>
+        <li>Every dog deserves dignity, healthcare, and safety</li>
+        <li>Transparency builds trust—for dogs and humans</li>
+        <li>Doing fewer adoptions well beats doing many poorly</li>
+    </ul>
+
+    <p>
+        Compassion without process is chaos.  
+        Process without compassion is empty.
+    </p>
+
+    <p><strong>We insist on both.</strong></p>
+</section>
+
+<!-- ================= HOW WE WORK ================= -->
+<section class="section card has-bg bg-about-process">
+    <h2>How We Work</h2>
+
+    <p>
+        We partner only with verified shelters, rescue groups, and licensed veterinarians.
+    </p>
+
+    <p>Each dog is:</p>
+
+    <ul class="checklist">
+        <li>Health-checked and vaccinated</li>
+        <li>Assessed for behavior and environment fit</li>
+        <li>Matched with adopters based on lifestyle—not impulse</li>
+    </ul>
+
+    <p>
+        After adoption, we stay involved—because success doesn’t end at handover.
+    </p>
+</section>
+
+<!-- ================= MORE THAN ADOPTION ================= -->
+<section class="section card has-bg bg-about-adoption">
+    <h2>More Than Adoption</h2>
+
+    <p>
+        We’re building a full ecosystem around responsible pet care:
+    </p>
+
+    <ul class="checklist">
+        <li>Adoption & foster programs</li>
+        <li>Veterinary support and grooming</li>
+        <li>Training guidance and education</li>
+        <li>Ethical products for everyday needs</li>
+    </ul>
+
+    <p>
+        This isn’t a campaign.  
+        <strong>It’s long-term infrastructure for animal welfare.</strong>
+    </p>
+</section>
+
+<!-- ================= WHO WE’RE FOR ================= -->
+<section class="section card has-bg bg-about-identity">
+    <h2>Who We’re For</h2>
+
+    <p>We’re for:</p>
+
+    <ul class="checklist">
+        <li>First-time adopters who want guidance</li>
+        <li>Families looking for the right match</li>
+        <li>Individuals ready to foster or volunteer</li>
+        <li>Anyone who believes dogs deserve better systems</li>
+    </ul>
+
+    <p>
+        If you’re here for shortcuts, we’re not for you.  
+        If you’re here to do it right, welcome.
+    </p>
+</section>
+
+<!-- ================= OUR PROMISE ================= -->
+<section class="section card has-bg bg-about-promise">
+    <h2>Our Promise</h2>
+
+    <ul class="checklist">
+        <li>Put dogs first, always</li>
+        <li>Be honest—even when it’s inconvenient</li>
+        <li>Say no when adoption isn’t the right call</li>
+        <li>Keep improving the system, one decision at a time</li>
+    </ul>
+
+    <p>
+        Trust is earned. We work for it every day.
+    </p>
+</section>
+
+<!-- ================= JOIN THE MISSION ================= -->
+<section class="section card has-bg bg-about-mission">
+    <h2>Join the Mission</h2>
+
+    <p>
+        Whether you adopt, foster, volunteer, or simply spread the word—you’re part of the solution.
+    </p>
+
+    <p>
+        Because saving dogs isn’t about heroes.
+    </p>
+
+    <p><strong>It’s about systems that work.</strong></p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-card card">
+            <h4>Company</h4>
+            <span onclick="link('about')">About Us</span><br />
+            <span onclick="link('contact')">Contact</span>
         </div>
-    </nav>
 
-    <!-- ABOUT HERO -->
-    <section class="page-hero sn-pro-font">
-        <div class="page-hero-content">
-            <h1>Why We Exist</h1>
-            <p>
-                Doggos was built to give abandoned dogs a second chance—
-                and humans a better first choice.
-            </p>
+        <div class="footer-card card">
+            <h4>Services</h4>
+            <span onclick="link('services')">Adoption</span><br />
+            <span>Foster</span><br />
+            <span>Grooming</span><br />
+            <span>Vet Care</span>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- ABOUT CONTENT -->
-    <main class="page-content sn-pro-font">
-        <p>
-            We are a rescue-first adoption platform.
-            No breeders. No shortcuts. No excuses.
-        </p>
-
-        <p>
-            Every dog you see here has been rescued, vetted,
-            and matched with people who are ready to commit—
-            not impulse-buy.
-        </p>
-    </main>
-
-    <!-- THEME TOGGLE -->
-    <button id="theme-change" onclick="themeChange()" aria-label="Change theme">
-        <img src="./assets/icons/edit-contrast.svg" alt="Theme toggle" />
-    </button>
-
-    <script src="./script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
